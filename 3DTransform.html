@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transform CSS</title>
+    <style>
+        .base{
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            background: rgb(52, 51, 50);
+            color: white;
+            margin: 60px;
+            display: inline-block;
+        }
+        #box1{
+            width: 250px;
+            height: 250px;
+            background: red;
+            transform: rotate3d(0deg);
+            transition: all 1s;
+
+        }
+        #box2{
+            width: 250px;
+            height: 250px;
+            background: green;
+            transform: scale3d(1, 1, 1);
+            transition: all 1s;
+
+        }
+        #box3{
+            width: 250px;
+            height: 250px;
+            background: blue;
+            transition: all 1s;
+            transform: skew(0deg, 0deg);
+            
+        }
+        #box4{
+            width: 250px;
+            height: 250px;
+            background: gray;
+            transition: all 1s;
+            transform: translate3d(0px, 0px, 0px);
+            
+        }
+        #box1:hover{
+            transform: rotateX(80deg);
+        }
+        #box2:hover{
+            transform: scale3d(1.5, 1.5, 1.5);
+        }
+        #box3:hover{
+            transform: skew(10deg, 10deg);
+        }
+        #box4:hover{
+            transform: translate3d(30px, 30px, 10px);
+        }
+    </style>
+</head>
+<body>
+    <h1>3D Transform CSS</h1>
+    <div class="base">
+        <div id="box1">Rotate</div>
+    </div>
+    <div class="base">
+        <div id="box2">Scale</div>
+    </div>
+    <div class="base">
+        <div id="box3">skew</div>
+    </div>
+    <div class="base">
+        <div id="box4">Translate</div>
+    </div>
+    
+</body>
+</html>

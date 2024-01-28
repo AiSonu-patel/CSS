@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable function</title>
+    <style>
+        :root{
+            --main-color: red;
+            --head-font: impaot;
+            --p-font: vardana;
+            --color: white;
+
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        #box1{
+            border: 2px solid black;
+            width: 1000px;
+            height: 600px;
+            margin: 0px auto;
+        }
+        #heading{
+            background-color: var(--main-color);
+            font-family: var(--head-font);
+            color: var(--color);
+            height: 70px;
+
+        }
+        #heading h1{
+            padding: 20px 0px 10px 10px;
+            margin: 0px;
+        }
+        #menu{
+            background: burlywood;
+        }
+        #menu ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        #menu li{
+            display: inline-block;
+        }
+        #menu li a{
+            display: block;
+            text-decoration: none;
+            color: black;
+            margin: 0px;
+            padding: 17px;
+            font-size: 1er;
+        }
+        #menu li a:hover{
+            background: var(--main-color);
+            color: var(--color);
+        }
+        #content{
+            width: 800px;
+            float: left;
+            min-height: 450px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-family: var(--p-font);
+        }
+        #content h2{
+            margin-top: 10px;
+            font-family: var(--head-font);
+            color: var(--main-color);
+        }
+        #sidebar{
+            background: skyblue;
+            width: 200px;
+            float: right;
+            height: 450px;
+        }
+        #sidebar a{
+            text-decoration: none;
+            font-family: var(--p-font);
+            color: black;
+        }
+        #footer{
+            background-color: var(--main-color);
+            color: var(--color);
+            clear: both;
+            text-align: right;
+            font-size: 20px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <div id="heading">
+            <h1>
+                Sonu Kumar CSS
+            </h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>
+                Design Basic Layout
+            </h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod iure ullam doloribus, dolores officiis eum. Repellat perferendis voluptate quisquam debitis consequuntur adipisci sit, veniam provident quas, soluta at id doloremque, unde deleniti nobis fugiat veritatis ipsum sed qui pariatur ipsam voluptas fuga optio? Debitis reprehenderit laboriosam ratione odit non? Quis odit perspiciatis praesentium vitae reiciendis! Ducimus, exercitationem, nam quod, veniam accusamus ea at repellat unde cumque adipisci nesciunt minima autem explicabo provident blanditiis cupiditate odio ullam facere enim harum? Voluptatibus saepe, perspiciatis reiciendis quae tenetur explicabo. Culpa excepturi minima possimus, fugiat alias facere aspernatur doloribus voluptates, aliquam rem vitae.
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quod iure ullam doloribus, dolores officiis eum. Repellat perferendis voluptate quisquam debitis consequuntur adipisci sit, veniam provident quas, soluta at id doloremque, unde deleniti nobis fugiat veritatis ipsum sed qui pariatur ipsam voluptas fuga optio? Debitis reprehenderit laboriosam ratione odit non? Quis odit perspiciatis praesentium vitae reiciendis! Ducimus, exercitationem, nam quod, veniam accusamus ea at repellat unde cumque adipisci nesciunt minima autem explicabo provident blanditiis cupiditate odio ullam facere enim harum? Voluptatibus saepe, perspiciatis reiciendis quae tenetur explicabo. Culpa excepturi minima possimus, fugiat alias facere aspernatur doloribus voluptates, aliquam rem vitae.
+            </p>
+        </div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            aisonupatel@gmail.com
+        </div>
+    </div>
+</body>
+</html>

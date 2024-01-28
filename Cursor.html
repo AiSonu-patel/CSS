@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursor</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box1{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: orange;
+            cursor: auto;
+        }
+        .box2{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: skyblue;
+            cursor: default;
+        }
+        .box3{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: green;
+            cursor: none;
+        }
+        .box4{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: orange;
+            cursor: context-menu;
+        }
+        .box5{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: skyblue;
+            cursor: help;
+        }
+        .box6{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: green;
+            cursor: pointer;
+        }
+        .box7{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: skyblue;
+            cursor: progress;
+        }
+        .box8{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: orange;
+            cursor: wait;
+        }
+        .box9{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: skyblue;
+            cursor: cell;
+        }
+        .box10{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: green;
+            cursor: crosshair;
+        }
+        .box11{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: orange;
+            cursor: text;
+        }
+        .box12{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: skyblue;
+            cursor: vertical-text;
+        }
+        .box13{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: green;
+            cursor: alias;
+        }
+        .box14{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: orange;
+            cursor: copy;
+        }
+        .box15{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: skyblue;
+            cursor: move;
+        }
+        .box16{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: green;
+            cursor: no-drop;
+        }
+        .box17{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: orange;
+            cursor: not-allowed;
+        }
+        .box18{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: skyblue;
+            cursor: e-resize;
+        }
+        .box19{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: green;
+            cursor: n-resize;
+        }
+        .box20{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: orange;
+            cursor: ne-resize;
+        }
+        .box21{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: skyblue;
+            cursor: nw-resize;
+        }
+        .box22{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: green;
+            cursor: s-resize;
+        }
+        .box23{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: orange;
+            cursor: se-resize;
+        }
+        .box24{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: skyblue;
+            cursor: sw-resize;
+        }
+        .box25{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: green;
+            cursor: w-resize;
+        }
+        .box26{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: orange;
+            cursor: ew-resize;
+        }
+        .box27{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: skyblue;
+            cursor: ns-resize;
+        }
+        .box28{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: green;
+            cursor: nesw-resize;
+        }
+        .box29{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: orange;
+            cursor: nwse-resize;
+        }
+        .box30{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: skyblue;
+            cursor: col-resize;
+        }
+        .box31{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: green;
+            cursor: row-resize;
+        }
+        .box32{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: orange;
+            cursor: all-scroll;
+        }
+        .box33{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: skyblue;
+            cursor: zoom-in;
+        }
+        .box34{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: green;
+            cursor: zoom-out;
+        }
+        .box35{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: orange;
+            cursor: grab;
+        }
+        .box36{
+            border: 1px solid black;
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            background: skyblue;
+            cursor: grabbing;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coursor CSS</h1>
+    <div class="box1">auto</div>
+    <div class="box2">Default</div>
+    <div class="box3">None</div>
+    <div class="box4">Context-menu</div>
+    <div class="box5">Help</div>
+    <div class="box6">Pointer</div>
+    <div class="box7">Progress</div>
+    <div class="box8">Wait</div>
+    <div class="box9">Cell</div>
+    <div class="box10">Crosshair</div>
+    <div class="box11">Text</div>
+    <div class="box12">Vertical-text</div>
+    <div class="box13">Alias</div>
+    <div class="box14">Copy</div>
+    <div class="box15">Move</div>
+    <div class="box16">No-drop</div>
+    <div class="box17">Not-allowed</div>
+    <div class="box18">e-resize</div>
+    <div class="box19">n-resize</div>
+    <div class="box20">ne-resize</div>
+    <div class="box21">nw-resize</div>
+    <div class="box22">s-resize</div>
+    <div class="box23">se-resize</div>
+    <div class="box24">sw-resize</div>
+    <div class="box25">w-resize</div>
+    <div class="box26">ew-resize</div>
+    <div class="box27">ns-resize</div>
+    <div class="box28">nesw-resize</div>
+    <div class="box29">nwse-resize</div>
+    <div class="box30">col-resize</div>
+    <div class="box31">row-resize</div>
+    <div class="box32">all-scroll</div>
+    <div class="box33">zoom-in</div>
+    <div class="box34">zoom-out</div>
+    <div class="box35">grab</div>
+    <div class="box36">grabbing</div>
+</body>
+</html>

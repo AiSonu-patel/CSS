@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table properties</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        table{
+            width: 300px;
+            /* border-spacing: 20px 20px; */
+            border-collapse: collapse;
+        }
+        td, th{
+            /* vertical-align: bottom; */
+            /* vertical-align: middle; */
+            vertical-align: top;
+            padding: 5px 10px;
+        }
+        table, td, th{
+            border: 1px solid #ddd;
+        }
+        caption{
+            /* caption-side: bottom; */
+            caption-side: top;
+            margin: 10px;
+
+        }
+        tr:hover{
+            /* background: rgb(155, 152, 152); */
+        }
+        tr:nth-child(even){
+            background: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Table Properties CSS
+    </h1>
+    <table>
+        <caption>Employee Records</caption>
+        <tr>
+            <th>First Name</th>
+            <th>LastName</th>
+            <th>Saving</th>
+        </tr>
+        <tr>
+            <td>Sonu Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, mollitia.</td>
+            <td>Kumar</td>
+            <td>$5000</td>
+        </tr>
+        <tr>
+            <td>Satyam Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ex!</td>
+            <td>Kumar</td>
+            <td>$15000</td>
+        </tr>
+        <tr>
+            <td>Vimal</td>
+            <td>Kumar</td>
+            <td>$10000</td>
+        </tr>
+        <tr>
+            <td>Vishal</td>
+            <td>Kumar</td>
+            <td>$10000</td>
+        </tr>
+        <tr>
+            <td>Nitesh</td>
+            <td>Kumar</td>
+            <td>$10000</td>
+        </tr>
+        <tr>
+            <td>Ramesh</td>
+            <td>Kumar</td>
+            <td>$10000</td>
+        </tr>
+        <tr>
+            <td>Raju</td>
+            <td>Kumar</td>
+            <td>$10000</td>
+        </tr>
+    </table>
+</body>
+</html>

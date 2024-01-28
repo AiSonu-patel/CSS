@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background: pink;
+            /* transition-property: width, height, background;
+            transition-duration: 2s, 2s, 2s; */
+            /* transition: width, height, background 2s, 2s, 2s; */
+            transition: all 2s;
+        }
+        #box2{
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            transition-property: all;
+            transition-duration: 2s;
+            /* transition-timing-function: cubic-bezier(1, 0.5, 0.5, 1); */
+            /* transition-timing-function: ease; */
+            /* transition-timing-function: ease; */
+            /* transition-timing-function: ease-out; */
+            /* transition-timing-function: ease-in-out; */
+            /* transition-timing-function: linear; */
+            /* transition-timing-function: step-end; */
+            /* transition-timing-function: step-start; */
+            /* transition-timing-function: steps(4); */
+            /* transition-timing-function: steps(step-end); */
+            /* transition-delay: 1s; */
+
+            transition: all 2s linear;
+
+        }
+        #box:hover{
+            width: 300px;
+            height: 300px;
+            background: orange;
+        }
+        #box2:active{
+            width: 300px;
+            height: 300px;
+            background: orangered;
+        }@media only screen and (max-width:960px){
+            #box{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition CSS</h1>
+    <div id="box"></div>
+    <h1>transition-timing-function</h1>
+    <div id="box2"></div>
+</body>
+</html>
