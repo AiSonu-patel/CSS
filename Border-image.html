@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-image</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 30px;
+            background: #550c0c;
+            color: white;
+        }
+        #box{
+            width: 300px;
+            height: 300px;
+            margin: 0px auto;
+            border: 70px solid black;
+            font-size: 18px;
+            text-align: justify;
+            padding: 20px;
+            background: #cacae1;
+            color: black;
+
+            border-image: url(images/bordeer_image-removebg-preview.png);
+            border-image-slice: 50;
+            border-image-width: auto;
+            /* border-image-outset: 50px; */
+            border-image-repeat: stretch;
+
+            /* border-image: url(images/bordeer_image-removebg-preview.png) 50 / auto / 50px stretch; */
+
+            box-shadow: -2px 11px 39px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Border-image CSS:</h1>
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque esse distinctio voluptate consequatur, laudantium repellendus non ad minus perferendis! Esse consequuntur veritatis quae porro quo veniam, assumenda dolorum optio dicta!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus et tenetur pariatur doloremque reprehenderit quidem earum voluptates, cum odit laboriosam neque repellat doloribus nostrum commodi sunt libero facere harum delectus?
+    </div>
+</body>
+</html>
