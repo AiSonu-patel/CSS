@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes Selectors</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        li:first-child{
+            color: blue;
+        }
+        li:nth-child(2n){
+            color: red;
+        }
+        li:nth-of-type(3n){
+            color: blue;
+        }
+        p:first-of-type{
+            color: orange;
+        }
+        div:empty{
+            border: 2px solid black;
+        }
+        p:not(.box){
+            color: green;
+        }
+        #head a:link{
+            color: red;
+        }
+        #head a:hover{
+            color: blue;
+        }
+        #head a:visited{
+            color: green;
+        }
+        #head a:active{
+            color: purple;
+        }
+        p:target{
+            background-color: gold;
+        }
+        p::first-letter{
+            color: purple;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        ::selection{
+            background-color: red;
+            color: white;
+        }
+        li:hover:before{
+            content: "Ans- ";
+            color: green;
+        }
+        li::after{
+            content: " end";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes Selectors</h1>
+    <div></div>
+    <h1>Question</h1>
+    <ul>
+        <li><a href="#html">What is HTML</a></li>
+        <li><a href="#css">What is CSS</a></li>
+        <li><a href="#js">What is JS</a></li>
+    </ul>
+    <h2>Answer</h2>
+    <p id="html">HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page. HTML consists of a series of elements. HTML elements tell the browser how to display the content.</p>
+    <p id="css">CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). </p>
+    <p id="js">JavaScript is a text-based programming language that you can use from server-side and client-side in your . Net applications. You can use it for developing web pages with its more interactive and user-friendly benefits.</p>
+    <ul id="list">
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, consectetur?</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iste facere quis.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit consectetur sapiente modi eum reiciendis consequatur?</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam temporibus dolores doloribus ipsum cupiditate laudantium quidem et, labore sunt vitae facilis aspernatur dolor excepturi qui obcaecati, quisquam maiores esse velit.</p>
+    <p lang="en">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, enim?</p>
+    <p class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam temporibus dolores doloribus ipsum cupiditate laudantium quidem et, labore sunt vitae facilis aspernatur dolor excepturi qui obcaecati, quisquam maiores esse velit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam temporibus dolores doloribus ipsum cupiditate laudantium quidem et, labore sunt vitae facilis aspernatur dolor excepturi qui obcaecati, quisquam maiores esse velit.</p>
+    <ul>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, consectetur?</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iste facere quis.</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit consectetur sapiente modi eum reiciendis consequatur?</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam temporibus dolores doloribus ipsum cupiditate laudantium quidem et, labore sunt vitae facilis aspernatur dolor excepturi qui obcaecati, quisquam maiores esse velit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam temporibus dolores doloribus ipsum cupiditate laudantium quidem et, labore sunt vitae facilis aspernatur dolor excepturi qui obcaecati, quisquam maiores esse velit.</p>
+</body>
+</html>
