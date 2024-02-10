@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background: #eee;
+            width: 700px;
+            height: 800px;
+            margin: 50px 0 0 50px;
+
+            display: grid;
+            grid-template-columns:50% repeat(2, 150px);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+        .item1{
+            background: orange;
+        }
+        .item2{
+            background: blueviolet;
+        }
+        .item3{
+            background: green;
+        }
+        .item4{
+            background: red;
+        }
+        .item5{
+            background: yellow;
+        }
+        .item6{
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid CSS:</h1>
+    <dev class="container">
+        <div class="item1">First</div>
+        <div class="item2">Second</div>
+        <div class="item3">Third</div>
+        <div class="item4">Fourth</div>
+        <div class="item5">Fifth</div>
+        <div class="item6">Sixth</div>
+    </dev>
+</body>
+</html>
