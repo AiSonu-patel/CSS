@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Gap</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background: #eee;
+            width: 720px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 120px 60px 100px 400px 50px;
+            grid-gap: 15px;
+
+            grid-template-areas: "header header ."
+                                    "menu menu menu"
+                                    "box1 box2 sidebar"
+                                    "content content sidebar"
+                                    "footer footer footer";
+        }
+        .header{
+            background: red;
+            grid-area: header;
+        }
+        .menu{
+            background: yellowgreen;
+            grid-area: menu;
+        }
+        .box1{
+            background: rgb(80, 80, 125);
+            grid-area: box1;
+        }
+        .box2{
+            background: pink;
+            grid-area: box2;
+        }
+        .content{
+            background: rgb(65, 150, 183);
+            grid-area: content;
+        }
+        .sidebar{
+            background: blue;
+            grid-area: sidebar;
+        }
+        .footer{
+            background: orange;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="content">Content</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

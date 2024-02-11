@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minmax</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-weight:bold;
+        }
+        .content{
+            background: #eee;
+            width: 80%;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: minmax(15px, 30%) 1fr 1fr min-content;
+            grid-template-rows: repeat(2, Minmax(15px, min-content));
+            grid-gap: 5px;
+        }
+        .one{
+            background: orange;
+        }
+        .two{
+            background: blue;
+        }
+        .three{
+            background: green;
+        }
+        .four{
+            background: tomato;
+        }
+        .five{
+            background: red;
+        }
+        .six{
+            background: gold;
+        }
+        .seven{
+            background: rebeccapurple;
+        }
+        .eight{
+            background: teal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Min Max Function CSS:</h1>
+    <dev class="content">
+        <div class="one">One Lorem ipsum dolor sit amet.</div>
+        <div class="two">Two Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quis numquam voluptatum. Deserunt saepe maiores illum quasi numquam?</div>
+        <div class="three">Three Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, placeat!</div>
+        <div class="four">Four Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, animi.</div>
+        <div class="five">Five Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt at ipsam pariatur ipsa repellendus!</div>
+        <div class="six">Six Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora maxime cum nisi blanditiis animi. Amet.</div>
+        <div class="seven">Seven Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia perferendis quibusdam deserunt assumenda a quia tempora voluptatum error voluptatem sed?</div>
+        <div class="eight">Eight Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </dev>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background: #eee;
+            width: 720px;
+            margin: 45px auto 0;
+            display: grid;
+            grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+            grid-template-rows: [header-start] 120px [header-end menu-start] 60px [menu-end box-start] 100px [box-end content-start] 400px [content-end footer-start] 50px [footer-end];
+            grid-gap: 15px;
+        }
+        .header{
+            background: red;
+            grid-column: col-start 1 / col-end 3;
+            grid-row: header-start / header-end;
+        }
+        .menu{
+            background: yellowgreen;
+            grid-column: col-start 1 / col-end 3;
+            grid-row: menu-start / menu-end;
+        }
+        .box1{
+            background: rgb(80, 80, 125);
+        }
+        .box2{
+            background: pink;
+        }
+        .content{
+            background: rgb(65, 150, 183);
+            grid-column: col-start 1 / col-end 2;
+            grid-row: content-start / content-end;
+        }
+        .sidebar{
+            background: blue;
+            grid-column: col-start 3 / col-end 3;
+            grid-row: box-start / content-end;
+        }
+        .footer{
+            background: orange;
+            grid-column: col-start 1 / col-end 3;
+            grid-row: footer-start / footer-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="content">Content</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
