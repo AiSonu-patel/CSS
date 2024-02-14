@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implicit & Explicit Grid</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .contend{
+            /* aligning Grid items */
+            background: #eee;
+            width: 650px;
+            margin: 45px auto 0px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 120px);
+            grid-gap: 15px;
+
+            grid-auto-rows: 80px;
+            /* grid-auto-columns: 80px;
+            grid-auto-flow: .5fr; */
+        }
+        .item1{
+            background: green;
+        }
+        .item2{
+            background: orange;
+        }
+        .item3{
+            background: blue;
+        }
+        .item4{
+            background: rebeccapurple;
+        }
+        .item5{
+            background: red;
+        }
+        .item6{
+            background: yellow;
+        }
+        .item7{
+            background: fuchsia;
+        }
+        .item8{
+            background: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Implicit & Explicit Grid CSS:</h1>
+    <div class="contend">
+        <div class="item1">one</div>
+        <div class="item2">two</div>
+        <div class="item3">Three</div>
+        <div class="item4">four</div>
+        <div class="item5">five</div>
+        <div class="item6">six</div>
+        <div class="item7">Seven</div>
+        <div class="item8">Eight</div>
+    </div>
+</body>
+</html>
