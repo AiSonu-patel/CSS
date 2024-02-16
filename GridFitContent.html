@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Fit Content</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .contend{
+            width: 80%;
+            background: lightgreen;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
+            grid-template-rows: repeat(2, 100px);
+
+        }
+        .item1{
+            background: green;
+        }
+        .item2{
+            background: orange;
+        }
+        .item3{
+            background: yellowgreen;
+        }
+        .item4{
+            background: rebeccapurple;
+        }
+        .item5{
+            background: red;
+        }
+        .item6{
+            background: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Fit content CSS:</h1>
+    <div class="contend">
+        <div class="item1">one Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quae officiis magni quis, ullam eveniet dolore. Iusto consequatur accusantium vel itaque illo officia recusandae nostrum a quisquam in odit quo vitae eaque, non, quis velit adipisci eos officiis aut at nisi fugiat vero. Quis, quo minus incidunt asperiores iusto obcaecati sint aliquam eaque, laborum ullam voluptates tempore deleniti rerum ipsum molestias sit quasi provident doloremque ducimus delectus voluptatum amet. Eligendi laborum, similique nostrum ullam inventore laudantium suscipit odio qui voluptatem labore eius quas molestiae delectus? Laboriosam, ea. Tenetur reprehenderit dolorum magnam veniam! Ad pariatur corrupti culpa expedita ipsa totam explicabo?</div>
+        <div class="item2">two</div>
+        <div class="item3">Three</div>
+        <div class="item4">four</div>
+        <div class="item5">five</div>
+        <div class="item6">six</div>
+    </div>
+</body>
+</html>
