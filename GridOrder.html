@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Order</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-weight: bold;
+        }
+        .contend{
+            width: 600px;
+            background: lightgreen;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2,300px);
+            grid-template-rows: 200px 200px 200px;
+
+        }
+        .item1{
+            background: green;
+            order: 6;
+        }
+        .item2{
+            background: orange;
+            order: 5;
+        }
+        .item3{
+            background: yellowgreen;
+            order: 4;
+        }
+        .item4{
+            background: rebeccapurple;
+            order: 3;
+        }
+        .item5{
+            background: red;
+            order: 2;
+        }
+        .item6{
+            background: aqua;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>grid Order CSS:</h1>
+    <div class="contend">
+        <div class="item1">one</div>
+        <div class="item2">two</div>
+        <div class="item3">Three</div>
+        <div class="item4">four</div>
+        <div class="item5">five</div>
+        <div class="item6">six</div>
+    </div>
+</body>
+</html>

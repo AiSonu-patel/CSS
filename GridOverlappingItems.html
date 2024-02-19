@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overlapping Grid</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .contend{
+            width: 300px;
+            background: wheat;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2, 150px);
+
+        }
+        .items{
+            max-width: 150px;
+        }
+        .item1{
+            background: green;
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            align-self: start;
+            z-index: 1;
+        }
+        .item2{
+            background: orange;
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            align-self: center;
+            justify-self: center;
+            z-index: 2;
+        }
+        .item3{
+            background: yellowgreen;
+            grid-column: 1 / span 2;
+            grid-row: 1 / span 2;
+            align-self: end;
+            justify-self: end;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid Overlapping CSS:</h1>
+    <div class="contend">
+        <div class="items item1">one Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ipsum! Reiciendis ut cum placeat nostrum dolorum eos optio officiis atque?</div>
+        <div class="items item2">two Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat a mollitia maxime quaerat vero repudiandae similique nesciunt sint unde tempora.</div>
+        <div class="items item3">three Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi tempora assumenda labore dolore distinctio molestiae esse, aperiam perferendis recusandae fugiat.</div>
+    </div>
+</body>
+</html>
