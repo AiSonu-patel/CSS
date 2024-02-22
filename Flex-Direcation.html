@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Direcation</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .contend{
+            background: #eee;
+            border: 3px solid black;
+            width: 600px;
+            margin: 50px auto 0;
+            padding: 10px;
+
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            flex-direction: column-reverse;
+        }
+        .box1{
+            background: orange;
+        }
+        .box2{
+            background: green;
+        }
+        .box3{
+            background: blue;
+        }
+        .box4{
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex-Direcation CSS:</h1>
+    <div class="contend">
+        <div class="box1">one</div>
+        <div class="box2">two</div>
+        <div class="box3">three</div>
+        <div class="box4">four</div>
+    </div>
+</body>
+</html>
