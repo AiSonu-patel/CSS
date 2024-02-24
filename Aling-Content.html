@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aling-content</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .contend{
+            background: #eee;
+            border: 3px solid black;
+            margin: 50px;
+            padding: 10px;
+            height: 400px;
+            width: 400px;
+            margin: 50px auto 0;
+            padding: 10px;
+
+            display: flex;
+            flex-wrap: wrap;
+            /* align-content: stretch; */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            align-content: space-evenly;
+            
+        }
+        .contend > div{
+            padding: 10px;
+            margin: 5px;
+        }
+        .box1{
+            background: orange;
+        }
+        .box2{
+            background: green;
+        }
+        .box3{
+            background: blue;
+        }
+        .box4{
+            background: gray;
+        }
+        .box5{
+            background: salmon;
+        }
+        .box6{
+            background: darkorchid;
+        }
+        .box7{
+            background: aqua;
+        }
+        .box8{
+            background: fuchsia;
+        }
+    </style>
+</head>
+<body>
+    <h1>aling-content CSS:</h1>
+    <div class="contend">
+        <div class="box1">one</div>
+        <div class="box2">two</div>
+        <div class="box3">three</div>
+        <div class="box4">four</div>
+        <div class="box5">five</div>
+        <div class="box6">six</div>
+        <div class="box7">seven</div>
+        <div class="box8">eight</div>
+    </div>
+</body>
+</html>

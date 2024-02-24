@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify content</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .contend{
+            background: #eee;
+            border: 3px solid black;
+            width: 500px;
+            /* height: 200px; */
+            margin: 50px auto 0;
+            padding: 10px;
+
+            display: flex;
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: start; */
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+        }
+        .contend > div{
+            padding: 10px;
+            margin: 5px;
+        }
+        .box1{
+            background: orange;
+        }
+        .box2{
+            background: green;
+        }
+        .box3{
+            background: blue;
+        }
+        .box4{
+            background: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>justify content CSS:</h1>
+    <div class="contend">
+        <div class="box1">one</div>
+        <div class="box2">two</div>
+        <div class="box3">three</div>
+        <div class="box4">four</div>
+    </div>
+</body>
+</html>

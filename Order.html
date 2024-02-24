@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .contend{
+            background: #eee;
+            border: 3px solid black;
+            margin: 50px;
+            padding: 10px;
+            width: 400px;
+            height: 100px;
+            margin: 50px auto 0;
+            padding: 10px;
+
+            display: flex;
+            justify-content: space-evenly;  
+            
+        }
+        .contend > div{
+            padding: 10px;
+            margin: 5px;
+        }
+        .box1{
+            background: orange;
+        }
+        .box2{
+            background: green;
+            order: 1;
+        }
+        .box3{
+            background: blue;
+            order: 2;
+        }
+        .box4{
+            background: gray;
+            order: -1;
+        }
+        .box5{
+            background: darkcyan;
+            order: -2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order CSS:</h1>
+    <div class="contend">
+        <div class="box1">one</div>
+        <div class="box2">two</div>
+        <div class="box3">three</div>
+        <div class="box4">four</div>
+        <div class="box4">five</div>
+    </div>
+</body>
+</html>

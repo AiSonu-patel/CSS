@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-shrink</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .contend{
+            background: #eee;
+            border: 3px solid black;
+            padding: 10px;
+            height: 60px;
+            width: 1000px;
+            margin: 50px auto 0;
+            padding: 0px;
+
+            display: flex;
+            
+            
+        }
+        .box{
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            margin: 0px;
+            height: 60px;
+            padding: 0px;
+            /* width: 600px; */
+        }
+        .box1{
+            background: orange;
+            /* flex-basis: 200px;
+            flex-shrink: 1; */
+            flex: 0 1 auto;
+        }
+        .box2{
+            background: green;
+        }
+        .box3{
+            background: blue;
+            flex-shrink: 1;
+        }
+        .box4{
+            background: gray;
+        }
+        .box5{
+            background: darkcyan;
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex-shrink CSS:</h1>
+    <div class="contend">
+        <div class="box box1">one</div>
+        <div class="box box2">two</div>
+        <div class="box box3">three</div>
+        <div class="box box4">four</div>
+        <div class="box box5">five</div>
+    </div>
+</body>
+</html>

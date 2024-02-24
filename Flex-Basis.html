@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Basis</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .contend{
+            background: #eee;
+            border: 3px solid black;
+            margin: 50px;
+            padding: 10px;
+            width: 600px;
+            margin: 50px auto 0;
+            padding: 10px;
+
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .box{
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            height: 60px;
+            font-weight: bold;
+            color: white;
+            flex-grow: 1;
+        }
+        .box1{
+            background: orange;
+        }
+        .box2{
+            background: green;
+            flex-basis: 200px;
+        }
+        .box3{
+            background: blue;
+        }
+        .box4{
+            background: gray;
+        }
+        .box5{
+            background: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex-Basis CSS:</h1>
+    <div class="contend">
+        <div class="box box1">one</div>
+        <div class="box box2">two</div>
+        <div class="box box3">three</div>
+        <div class="box box4">four</div>
+        <div class="box box5">five</div>
+    </div>
+</body>
+</html>
